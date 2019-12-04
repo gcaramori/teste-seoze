@@ -20,3 +20,186 @@
 .App-link {
   color: #09d3ac;
 }
+
+.firstContainer {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.75);
+  border-radius: 15px;
+  z-index: 2;
+  background: #fff;
+}
+
+.firstContainer .productImg {
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+}
+
+.firstContainer > span {
+  position: absolute;
+  bottom: 70px;
+  left: 50px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.productImg  > img {
+  width: 220px;
+  height: 220px;
+}
+
+.firstContainer > h1 {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  text-align: right;
+  font-size: 22px;
+  width: 350px;
+}
+
+.firstButtons {
+  position: absolute;
+  bottom: 40px;
+  right: 20px;
+  width: 200px; 
+  display: flex;
+  justify-content: space-around;
+}
+
+.secondContainer {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.75);
+  border-radius: 15px;
+  z-index: 1;
+  background: #fff;
+}
+
+.secondContainer .productImg {
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.productImg  > img {
+  width: 220px;
+  height: 220px;
+}
+
+.secondContainer > h1 {
+  position: absolute;
+  top: 25px;
+  text-align: center;
+  font-size: 22px;
+  width: 350px;
+}
+
+.secondButtons {
+  position: absolute;
+  bottom: 40px;
+  right: 20px;
+  width: 200px; 
+  display: flex;
+  justify-content: space-around;
+}
+
+.defaultProduct .productImg {
+   top: 70px;
+}
+
+.defaultProduct .productImg {
+    width: 180px;
+    height: 180px;
+}
+
+.defaultProduct .productImg > img {
+    width: 180px;
+    height: 180px;
+}
+
+.defaultProduct span {
+  text-align: left;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.products {
+  position: absolute;
+  bottom: 90px;
+  right: 20px;
+  list-style: none;
+  padding: 40px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  height: 180px
+}
+
+.products  li {
+  margin-right: 10px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.products li > div {
+  width: 100px;
+  height: 100px;
+}
+
+.products li div > img {
+  width: 100px;
+  height: 100px;
+}
+
+.products  span {
+  display: block;
+  font-size: 11px;
+  width: 95px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.products li .image {
+  background-image: url("https://www.seoze.com/media/catalog/product/import/Coral-Teste-Facil-Fita-Violeta.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.selected .image {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAFSElEQVR4nO2bTWxVRRTHfxXyCKVEaTFGRVoLrYZF/UiD1hYjxo2JCY0LQ/wAEheCItFGEmxCXOnKxJVuqgvjR3RnkNSPGDGi0VKE1o28VkVc+C2geYWiwHNx7vWeub193o+Z6SP2n9zkvt6Z8//P7cyZM2fmwjzm8b9GgweOEnAT0ANcE1yXA8uAJUGZKeAE8CNwBJgAPgNGgL88aLSOpcBm4F2kcdWc11RgYzPQ5LUFOdEBDAEV8jd6tqsS2O6wKdjWEGgDngHuARYkPC8D+4BxpHt/h3T5SvC8CWgGWpEhch1wW3AfxzngTWAQOGZHfn6UgCdJ7uaHgceBFQXsrwAGgLEE+1MBd6mA/UJYBRyMiToP7AFudsDXA+wNODTnaKDFK/qBkzEhB4BuD9xrmfniTwaavGAbMg5D8tPAduAiXwIQP7Mj4A51nA20OcUg5psvIw5rrnADMBnTNOiKbGuMaARY7oosA5YBn2Bq22GbpB+z278DNNomKYBGJGDSw8GaT1iF6fA+Jwph6wmLgf1EOv8EOosaLWF63DLS5eoVLZg+YZSCcYJ2eqcRp1Pv6AJOEenelddQG2aEt92COF94DDNibM1j5HVl5AB+5/miWAB8QaT/1awGOhBPGoa3PiI82+jBnBVWZ6k8pCrvsS7NH4aJ2jGUttJSzPW8i4WNL/Ri5hNSJVW2qEqHXCnziHGi9myKP0xybBvV/SuORPmEbsPGWUsFKGFOfUWSGTbRjiQ/1uSouxJzGNQMjG5VhY/kIHOBNcAviKajOW1MELVrnX4QHwLa4e3LSWYTHcAHwKXB77wpct0Ww6nHX8C16n48J5ktXAW8j+whAPwB3JvT1pfqPinR+i8+Jeoq63OS2cCVwNeY4WxfAXt3KFv7axU8qgq2FSAM0QXsJlvS8jLgK6XjFJIiL4J2Ze/bWgV/UwVbCpI2AD8Ftn4m3dq8BemuoYYzwJ0FdYBkrkKbv9YqeEYVtJFv1z3qGDKuZ8PFmLmHv4G7LWgAWKTsTtcqaPsFdAHHlc0JpIvH0Qh8rMqdBx60wB8i9Qv4XRVstkTeg7m2GMPMKi0GPsRs/FZL3CFSDwHdZa+2KOAuZA4PbX+ENHwRZjKzimyn2UZqJ6jTy7dbFnEfZmb5beAtzMbvtswZIvU0+JIqaLsbAjyM2WB9PeeAL8QjiudF/SAeCZbV/fUOhLwAPJXw9+dx0/VD6N2r8qyl8LcYelbxvIz7fKOOKtfVKhhfDteat4ugAVmb34/7xreSYTkMplcecCrND3YStWc4TYUtqsJhZ7L8QYfWD6Sp0IQZuNziTJp79JEjKQpmWnyvE2l+oIdz6rQ4zNwYWWtdmnvolHjmjRGA15SBgyQff6tXLET8V6g/89YYyPShp0Trpy4cYgBz7K/Ma0hvj08DN9pQ5xjdiNZQd+7tcZCgYVQZm6R4psgllgPfEOktfEACZh6RGaE+Dy43YiZ1TyDLYCvoJ5oVqsj0Uk+HpJYA72F6/Q22SR5SBGFPqIdjcs2Y//kq8KgrsvhByUnm1jF2Y475KrKH6BTbMIfDNHImx2ecsBCZ6rS3P4ubJE4iNjDzsPQhJAHqGr2YQU410GJ9zP8X2jGnSL3k7HXA14ecUI3zjWLR22dFrQ8mxoEnKBCFIdHoTswlrY7wdlFwnrf1yUwr8DSS5UnyBZNIKnyM6JOZ45ifzLQEdjqRfOR6khcw54A3EIf8vSX91rAa9x9NZV7VzQWakANJwxR7GZXAxiYcRZ++P5zsRA4oXAFcQtSoCuLJf0DS1hf8h5PzmMcFgn8AOhsuz9OaLvwAAAAASUVORK5CYII=") !important;
+    background-size: 75px 75px !important;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.selected > span {
+    display: none;
+}
+
+.secondContainer > button {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
